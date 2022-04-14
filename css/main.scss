@@ -1,167 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 body {
     margin: 0;
     background-color: black;
 
     header {
-        background-color: transparent;
+        background-color: black;
+        opacity: 80%;
         width: 100%;
         position: fixed;
         top: 0;
-    }
-    
-        .head-container {
-            background-color: black;
-            opacity: 80%;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+
+        a .logo {
+            margin-top: 7px;
+            margin-left: 150px;
+            border-bottom: 2px solid red;
         }
-    
-            ul {
-                list-style: none;
-            }
-    
-                li {
-                    display: inline-block;
-                    margin: 0 25px;
 
-                    a button {
-                        width: 140px;
-                        height: 35px;
-                        border-radius: 50px;
-                        text-transform: uppercase;
-                        border-color: red;
-                        background-color: black;
-                        color: red;
-                        outline: none;
-                        transition: ease-out 0.3s;
-                        position: relative;
-                        z-index: 1;
-                    }
-                    
-                    a button:hover {
-                        color: white;
-                        cursor: pointer;
-                        border-color: white;
-                    }
-                    
-                    a button:before {
-                        transition: 0.5s all ease;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 50%;
-                        left: 50%;
-                        opacity: 0;
-                        content: '';
-                        background-color: red;
-                    }
-                    
-                    a button:hover:before {
-                        transition: 0.5s all ease;
-                        right: 0;
-                        left: 0;
-                        opacity: 1;
-                        z-index: -1;
-                        border-radius: 50px;
-                    }
-                }
-    
-                .logo {
-                    padding-top: 10px;
-                    position: relative;
-                }
-                
-                .logo:hover {
-                    animation: rotation 2s infinite linear;
-                }
-                
-                @keyframes rotation {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(-359deg);
-                    }
-                }
-    main {
-        background-color: red;
-
-        .main-container {
-            background-color: white;
+        ul {
+            list-style: none;
             display: flex;
-            width: 100vw;
+            margin-right: 100px;
+
+            li {
+                margin: 0 25px;
+
+                a button {
+                    width: 140px;
+                    height: 35px;
+                    border-radius: 50px;
+                    text-transform: uppercase;
+                    border-color: red;
+                    background-color: black;
+                    color: red;
+                    font-size: 17px;
+                    font-family: 'Roboto Mono', monospace;
+                    outline: none;
+                    transition: ease-out 0.3s;
+                    position: relative;
+                    z-index: 1;
+                }
+                
+                a button:hover {
+                    color: white;
+                    cursor: pointer;
+                    border-color: white;
+                }
+                
+                a button:before {
+                    transition: 0.5s all ease;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 50%;
+                    left: 50%;
+                    opacity: 0;
+                    content: '';
+                    background-color: red;
+                }
+                
+                a button:hover:before {
+                    transition: 0.5s all ease;
+                    right: 0;
+                    left: 0;
+                    opacity: 1;
+                    z-index: -1;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    background-color: red;
+
+    .intro-container {
+        background-color: black;
+        width: 99.6vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        .paragraph-box {
+            border: 2px solid yellow;
+
+            .para-subbox {
+                max-width: max-content;
+                position: relative;
+
+                .intro-paragraph {
+                    color: white;
+                    margin: 5px 0 0 0px;
+                    font-size: 50px;
+                    font-family: 'Roboto Mono', monospace;
+                    outline: 2px solid blue;
+
+                    a {
+                        color: red;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline red 3px;
+                        text-underline-offset: 4px;
+                    }
+                }
+            }
+
+            .para-subbox::before
+            .para-subbox::after {
+                content: '';
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .para-subbox::before {
+                background: teal;
+            }
+        }
+
+        .intro-logo {
+            width: 800px;
+        }
+    }
+
+    .main-container {
+        background-color: black;
+        display: flex;
+        width: 99.6vw;
+        height: 100vh;
+
+        .img-container {
+            width: 100%;
             height: 100vh;
 
-            .img-container {
+            .img-fit {
                 width: 100%;
                 height: 100%;
-
-                .img-fit {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                object-fit: cover;
             }
         }
+
+        #clip-left {
+            clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+        }
+
+        #clip-middle {
+            clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+            z-index: 2;
+        }
+
+        #clip-right {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%);
+        }
     }
-    footer {
-        background-color: black;
+}
 
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+footer {
+    background-color: black;
+    z-index: 5;
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        color: white;
+
+        .data-privacy {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid white;
             align-items: center;
-            margin: 0 auto;
-            width: 60%;
-            color: white;
 
-            .data-privacy {
-                display: flex;
-                flex-direction: column;
-                border-right: 1px solid white;
-
-                .data-privacy a {
-                    color: red;
-                }
+            a {
+                color: red;
             }
+        }
 
-            .footer-nav ul {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                align-items: center;
-                justify-items: center;
-                list-style: none;
-                height: 100px;
-                border-left: 1px solid white;
-                border-right: 1px solid white;
-                padding-inline-end: 40px;
+        .footer-nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            list-style: none;
+            height: 100px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            padding-inline-end: 40px;
 
-                .footer-nav a {
-                    text-decoration: none;
-                    color: white;
-                }
-                
-                .footer-nav a:hover {
-                    text-decoration: underline red 3px;
-                    text-underline-offset: 4px;
-                }
+            a {
+                text-decoration: none;
+                color: white;
             }
+            
+            a:hover {
+                text-decoration: underline red 3px;
+                text-underline-offset: 4px;
+            }
+        }
 
-            .social-media {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                border-left: 1px solid white;
-                height: 100px;
+        .social-media {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-left: 1px solid white;
+            height: 100px;
 
-                .social-icon {
-                    color: red;
-                }
+            .social-icon {
+                color: red;
             }
         }
     }

@@ -15,49 +15,75 @@
   <!-- ################################################################### -->
   <body>
     <header>
-      <div>
-        <nav>
-          <!-- navigation bar -->
-          <ul class="head-container">
-            <li>
-              <a href="#"><button type="button">Newsletters</button></a>
-            </li>
-            <li>
-              <a href="#"><button type="button">About</button></a>
-            </li>
-            <li class="logo">
-              <a href="index.html"
-                ><img src="/images/logo.png" alt="logo" width="80px"
-              /></a>
-            </li>
-            <li>
-              <a href="#"><button type="button">Contact</button></a>
-            </li>
-            <li>
-              <a href="#"><button type="button">Affiliates</button></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- end of navigation bar -->
-      </div>
+      <a href="index.html"
+        ><img class="logo" src="/images/main_logo.png" alt="logo" width="80px"
+      /></a>
+      <nav>
+        <!-- navigation bar -->
+        <ul>
+          <li>
+            <a href="#"><button type="button">Newsletters</button></a>
+          </li>
+          <li>
+            <a href="#"><button type="button">About</button></a>
+          </li>
+          <li>
+            <a href="#"><button type="button">Contact</button></a>
+          </li>
+          <li>
+            <a href="#"><button type="button">Affiliates</button></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end of navigation bar -->
     </header>
     <main>
-      <!-- main three images -->
-      <div class="main-container">
-        <div class="img-container">
-          <img class="img-fit" src="images/zoro.jpg" alt="Image of Zoro" />
+      <section>
+        <div class="intro-container">
+          <div class="paragraph-box">
+            <div class="para-subbox"><p class="intro-paragraph">Hi,</p></div>
+            <div class="para-subbox"><p class="intro-paragraph">I'm <a href="sub_pages/about.html">Francisco</a>,</p></div>
+            <div class="para-subbox"><p class="intro-paragraph">I enjoy Art, Computing</p></div>
+            <div class="para-subbox"><p class="intro-paragraph">and Science</p></div>
+            </p>
+          </div>
+          <img
+            class="intro-logo"
+            src="images/main_logo.png"
+            alt="a logo consisting of the words F and D"
+          />
         </div>
-        <div class="img-container">
-          <img class="img-fit" src="images/thanos.jpg" alt="Image of Thanos" />
+      </section>
+      <section>
+        <!-- main three images -->
+        <div class="main-container">
+          <div class="img-container" id="clip-left">
+            <a href="main_pages/science.html"
+              ><img class="img-fit" src="images/zoro.jpg" alt="Image of Zoro"
+            /></a>
+          </div>
+          <div class="img-container" id="clip-middle">
+            <a href="main_pages/computing.html"
+              ><img
+                class="img-fit"
+                src="images/thanos.jpg"
+                alt="Image of Thanos"
+            /></a>
+          </div>
+          <div class="img-container" id="clip-right">
+            <a href="main_pages/art.html"
+              ><img
+                class="img-fit"
+                src="images/madara.jpg"
+                alt="Image of Madara"
+            /></a>
+          </div>
+          <!--<img class="img-fit" src="images/1zoro.jpg" alt="Image of Zoro" />
+          <img class="img-fit" src="images/1thanos.jpg" alt="Image of Thanos" />
+          <img class="img-fit" src="images/1madara.jpg" alt="Image of Madara" />-->
         </div>
-        <div class="img-container">
-          <img class="img-fit" src="images/madara.jpg" alt="Image of Madara" />
-        </div>
-        <!--<img class="img-fit" src="images/1zoro.jpg" alt="Image of Zoro" />
-        <img class="img-fit" src="images/1thanos.jpg" alt="Image of Thanos" />
-        <img class="img-fit" src="images/1madara.jpg" alt="Image of Madara" />-->
-      </div>
-      <!-- end of main three images -->
+        <!-- end of main three images -->
+      </section>
     </main>
     <footer>
       <div class="footer-container">
@@ -101,6 +127,9 @@
           <a class="social-icon" href="#"
             ><ion-icon size="large" name="logo-facebook"></ion-icon
           ></a>
+          <a class="social-icon" href="#"
+            ><ion-icon size="large" name="logo-linkedin"></ion-icon
+          ></a>
         </div>
         <!-- end of social media section -->
       </div>
@@ -113,5 +142,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="apply.js"></script>
   </body>
 </html>
