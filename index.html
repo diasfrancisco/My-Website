@@ -8,50 +8,36 @@
     <meta name="author" content="Francisco Dias" />
     <meta name="keywords" content="Science, Computing, Art" />
     <title>Francisco Dias</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/index/main.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <!-- ################################################################### -->
   <!-- This the end of the head element and the start of the body elemment-->
   <!-- ################################################################### -->
   <body>
-    <header>
-      <a href="index.html"
-        ><img class="logo" src="/images/main_logo.png" alt="logo" width="80px"
-      /></a>
-      <nav>
-        <!-- navigation bar -->
-        <ul>
-          <li>
-            <a href="#"><button type="button">Newsletters</button></a>
-          </li>
-          <li>
-            <a href="#"><button type="button">About</button></a>
-          </li>
-          <li>
-            <a href="#"><button type="button">Contact</button></a>
-          </li>
-          <li>
-            <a href="#"><button type="button">Affiliates</button></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end of navigation bar -->
-    </header>
+    <div id="navbar-import"></div>
+    <script>$(function() {
+      $("#navbar-import").load("nav.html");
+    });</script>
     <main>
       <section>
         <div class="intro-container">
           <div class="paragraph-box">
-            <div class="para-subbox"><p class="intro-paragraph">Hi,</p></div>
-            <div class="para-subbox"><p class="intro-paragraph">I'm <a href="sub_pages/about.html">Francisco</a>,</p></div>
-            <div class="para-subbox"><p class="intro-paragraph">I enjoy Art, Computing</p></div>
-            <div class="para-subbox"><p class="intro-paragraph">and Science</p></div>
+            <div class="para-subbox"><p class="intro-paragraph" id="para-one">Hi,</p></div>
+            <div class="para-subbox"><p class="intro-paragraph" id="para-two">I'm <a href="sub_pages/about.html">Francisco</a>,</p></div>
+            <div class="para-subbox"><p class="intro-paragraph" id="para-three">I enjoy Art, Computing</p></div>
+            <div class="para-subbox"><p class="intro-paragraph" id="para-four">and Science</p></div>
             </p>
           </div>
-          <img
+          <button><img
             class="intro-logo"
             src="images/main_logo.png"
             alt="a logo consisting of the words F and D"
-          />
+          /></button>
+          <div class="scroll-container">
+            <div class="scroll">Scroll down</div>
+            <div class="scroll" id="arrow">&#8595</div>
+          </div>
         </div>
       </section>
       <section>
@@ -78,9 +64,6 @@
                 alt="Image of Madara"
             /></a>
           </div>
-          <!--<img class="img-fit" src="images/1zoro.jpg" alt="Image of Zoro" />
-          <img class="img-fit" src="images/1thanos.jpg" alt="Image of Thanos" />
-          <img class="img-fit" src="images/1madara.jpg" alt="Image of Madara" />-->
         </div>
         <!-- end of main three images -->
       </section>
