@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -11,7 +20,7 @@ body header {
   position: fixed;
   top: 0;
   margin: 0;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,9 +34,9 @@ body header {
 }
 
 body header a .logo {
-  margin-top: 7px;
-  margin-left: 150px;
-  border-bottom: 2px solid red;
+  margin-top: 0.4375rem;
+  margin-left: 9.375rem;
+  border-bottom: 0,125rem solid red;
 }
 
 body header ul {
@@ -35,7 +44,7 @@ body header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 body header ul li {
@@ -94,20 +103,26 @@ main {
 
 main .intro-container {
   background-color: black;
-  width: 99.6vw;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 90vh 10vh;
+  grid-auto-rows: 9fr 1fr;
+      grid-template-areas: 'introarea logoarea' 'scrollarea scrollarea';
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
 }
 
-main .intro-container .para-subbox {
+main .intro-container .paragraph-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: introarea;
+}
+
+main .intro-container .paragraph-box .para-subbox {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -115,29 +130,29 @@ main .intro-container .para-subbox {
   /* after ----------------------------------------- */
 }
 
-main .intro-container .para-subbox .intro-paragraph {
+main .intro-container .paragraph-box .para-subbox .intro-paragraph {
   color: white;
   margin: 5px 0 0 0px;
   font-size: 50px;
   font-family: 'Roboto Mono', monospace;
 }
 
-main .intro-container .para-subbox .intro-paragraph a {
+main .intro-container .paragraph-box .para-subbox .intro-paragraph a {
   color: red;
   text-decoration: none;
 }
 
-main .intro-container .para-subbox .intro-paragraph a:hover {
+main .intro-container .paragraph-box .para-subbox .intro-paragraph a:hover {
   -webkit-text-decoration: underline red 3px;
           text-decoration: underline red 3px;
   text-underline-offset: 4px;
 }
 
-main .intro-container .para-subbox #para-four {
+main .intro-container .paragraph-box .para-subbox #para-four {
   padding-right: 10px;
 }
 
-main .intro-container .para-subbox #para-one::before, main .intro-container .para-subbox #para-one::after, main .intro-container .para-subbox #para-two::before, main .intro-container .para-subbox #para-two::after, main .intro-container .para-subbox #para-three::before, main .intro-container .para-subbox #para-three::after, main .intro-container .para-subbox #para-four::before, main .intro-container .para-subbox #para-four::after {
+main .intro-container .paragraph-box .para-subbox #para-one::before, main .intro-container .paragraph-box .para-subbox #para-one::after, main .intro-container .paragraph-box .para-subbox #para-two::before, main .intro-container .paragraph-box .para-subbox #para-two::after, main .intro-container .paragraph-box .para-subbox #para-three::before, main .intro-container .paragraph-box .para-subbox #para-three::after, main .intro-container .paragraph-box .para-subbox #para-four::before, main .intro-container .paragraph-box .para-subbox #para-four::after {
   content: '';
   position: absolute;
   top: 5px;
@@ -146,31 +161,31 @@ main .intro-container .para-subbox #para-one::before, main .intro-container .par
   left: 0;
 }
 
-main .intro-container .para-subbox #para-one::before {
+main .intro-container .paragraph-box .para-subbox #para-one::before {
   background: black;
   -webkit-animation: typewriter 0.4s steps(3) 1s forwards;
           animation: typewriter 0.4s steps(3) 1s forwards;
 }
 
-main .intro-container .para-subbox #para-two::before {
+main .intro-container .paragraph-box .para-subbox #para-two::before {
   background: black;
   -webkit-animation: typewriter 1.5s steps(14) 2s forwards;
           animation: typewriter 1.5s steps(14) 2s forwards;
 }
 
-main .intro-container .para-subbox #para-three::before {
+main .intro-container .paragraph-box .para-subbox #para-three::before {
   background: black;
   -webkit-animation: typewriter 1.9s steps(22) 4s forwards;
           animation: typewriter 1.9s steps(22) 4s forwards;
 }
 
-main .intro-container .para-subbox #para-four::before {
+main .intro-container .paragraph-box .para-subbox #para-four::before {
   background: black;
   -webkit-animation: typewriter 1.2s steps(11) 6s forwards;
           animation: typewriter 1.2s steps(11) 6s forwards;
 }
 
-main .intro-container .para-subbox #para-one::after {
+main .intro-container .paragraph-box .para-subbox #para-one::after {
   width: 0.1em;
   background: white;
   opacity: 1;
@@ -178,7 +193,7 @@ main .intro-container .para-subbox #para-one::after {
           animation: typewriter 0.4s steps(3) 1s forwards, blinkbar 600ms steps(3) infinite, finish 0.5s 1.5s forwards;
 }
 
-main .intro-container .para-subbox #para-two::after {
+main .intro-container .paragraph-box .para-subbox #para-two::after {
   width: 0.1em;
   background: white;
   opacity: 0;
@@ -186,7 +201,7 @@ main .intro-container .para-subbox #para-two::after {
           animation: startup 0.5s 1.5s forwards, typewriter 1.5s steps(14) 2s forwards, blinkbar 600ms steps(14) 2s infinite, finish 0.5s 4s forwards;
 }
 
-main .intro-container .para-subbox #para-three::after {
+main .intro-container .paragraph-box .para-subbox #para-three::after {
   width: 0.1em;
   background: white;
   opacity: 0;
@@ -194,7 +209,7 @@ main .intro-container .para-subbox #para-three::after {
           animation: startup 0.5s 4s forwards, typewriter 1.9s steps(22) 4s forwards, blinkbar 600ms steps(22) 11, finish 0.5s 5.9s forwards;
 }
 
-main .intro-container .para-subbox #para-four::after {
+main .intro-container .paragraph-box .para-subbox #para-four::after {
   width: 0.1em;
   background: white;
   opacity: 0;
@@ -254,20 +269,23 @@ main .intro-container button {
   border: 15px solid red;
   background: none;
   border-radius: 50%;
-  height: 600px;
-  width: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 30.5em;
+  width: 30.5em;
+  background-position: center center;
   position: relative;
   -webkit-box-shadow: inset 0 0 5em 0 red, 0 0 5em 0 red;
           box-shadow: inset 0 0 5em 0 red, 0 0 5em 0 red;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logoarea;
 }
 
 main .intro-container button .intro-logo {
-  width: 450px;
-  margin-top: 20px;
-  margin-left: 25px;
+  width: 25em;
+  margin-top: 1,25em;
+  margin-left: 1.5625em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 main .intro-container button::before {
@@ -301,6 +319,10 @@ main .intro-container .scroll-container {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: scrollarea;
 }
 
 main .intro-container .scroll-container .scroll {
@@ -361,6 +383,16 @@ main .intro-container .scroll-container #arrow {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  main .intro-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 4.5fr 4.5fr 1fr;
+        grid-template-rows: 4.5fr 4.5fr 1fr;
+        grid-template-areas: 'introarea' 'logoarea' 'scrollarea';
+  }
+}
+
 main .main-container {
   background-color: black;
   display: -webkit-box;
@@ -406,8 +438,11 @@ footer {
 footer .footer-container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 'data footernav socialmedia';
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -431,6 +466,9 @@ footer .footer-container .data-privacy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: data;
 }
 
 footer .footer-container .data-privacy a {
@@ -454,6 +492,9 @@ footer .footer-container .footer-nav ul {
   border-right: 1px solid white;
   -webkit-padding-end: 40px;
           padding-inline-end: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footernav;
 }
 
 footer .footer-container .footer-nav ul a {
@@ -479,10 +520,23 @@ footer .footer-container .social-media {
           justify-content: space-evenly;
   border-left: 1px solid white;
   height: 100px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: socialmedia;
 }
 
 footer .footer-container .social-media .social-icon {
   color: red;
+}
+
+@media only screen and (max-width: 550px) {
+  footer .footer-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'data' 'footernav' 'socialmedia';
+  }
 }
 
 ::-webkit-scrollbar {
