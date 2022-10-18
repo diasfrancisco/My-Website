@@ -1,5 +1,6 @@
-import Navbar from './components/Navbar';
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar";
+import Introduction from "./Introduction";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
           <Navbar />
         </nav>
       </header>
+      <div>
+        <Introduction />
+      </div>
     </div>
   );
 }

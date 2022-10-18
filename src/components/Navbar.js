@@ -1,11 +1,16 @@
 import React from 'react'
-import '../App.css'
+import './App.css'
 
 function Navbar() {
   return (
-    <div className='navbarContainer'>
-        <div className='navItems'>Logo</div>
-        <div className='navItems'>Links</div>
+    <div id='navbar'>
+      <img src='' className='logo' alt='the main logo'></img>
+      <div className='navbarContainer'>
+          <button className='navItem'>Newsletter</button>
+          <button className='navItem'>About</button>
+          <button className='navItem'>Contact</button>
+          <button className='navItem'>Affiliates</button>
+      </div>
     </div>
   )
 }

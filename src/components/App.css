@@ -1,0 +1,31 @@
+:root{
+  background-color: black;
+  font-family: 'Playfair Display';
+}
+
+.App {
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+.navbarContainer{
+  box-sizing: border-box;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navItem{
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: red;
+}
