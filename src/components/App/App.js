@@ -1,6 +1,7 @@
 import "./App.css";
-import Navbar from "./Navbar";
-import Introduction from "./Introduction";
+import Navbar from "../Navbar/Navbar";
+import Introduction from "../Introduction/Introduction";
+import Gallery from "../Gallery/Gallery";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
           <Navbar />
         </nav>
       </header>
-      <div>
+      <div id="mainPage">
         <Introduction />
+        <Gallery />
       </div>
     </div>
   );

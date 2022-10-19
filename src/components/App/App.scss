@@ -1,11 +1,16 @@
 :root{
   background-color: black;
   font-family: 'Playfair Display';
+  overflow: hidden;
 }
+
+/* root */
 
 .App {
   text-align: center;
 }
+
+/* main app */
 
 #navbar {
   display: flex;
@@ -29,3 +34,33 @@
   background-color: transparent;
   color: red;
 }
+
+/* nav items */
+
+#introContainer{
+  color: white;
+  font-size: 50px;
+  background-color: red;
+  justify-items: center;
+}
+
+.introMessage{
+  background-color: blue;
+  margin: 10px 0px;
+}
+
+#mainPage{
+  display: grid;
+  margin: 0%;
+  grid-template: "a a" auto / 1fr 1fr;
+  height: 100ch;
+  color: white;
+}
+
+/* intro message */
+
+.pictureReel{
+  background-color: green;
+}
+
+/* intro picture reel */
