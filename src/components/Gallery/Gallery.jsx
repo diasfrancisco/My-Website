@@ -1,9 +1,9 @@
 import React from 'react'
 import './Gallery.scss'
 
-function Gallery() {
+const Gallery = () => {
   return (
-    <div className='pictureReel'>Gallery</div>
+    <div>Gallery</div>
   )
 }
 
