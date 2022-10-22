@@ -1,9 +1,9 @@
 import React from 'react'
-import './IntroMessage.scss'
+import './IntroMessage.css'
 
 const IntroMessage = () => {
   return (
-    <div>IntroMessage</div>
+    <div className='introduction__message'>IntroMessage</div>
   )
 }
 

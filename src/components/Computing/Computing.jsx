@@ -1,5 +1,5 @@
 import React from 'react'
-import './Computing.scss'
+import './Computing.css'
 
 const Computing = () => {
   return (

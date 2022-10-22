@@ -1,66 +1,33 @@
-:root{
-  background-color: black;
-  font-family: 'Playfair Display';
-  overflow: hidden;
-}
-
-/* root */
-
-.App {
-  text-align: center;
-}
-
-/* main app */
-
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 30px;
-}
-
-.navbarContainer{
+* {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.navItem{
-  padding: 10px;
-  border-radius: 50px;
-  font-size: 20px;
-  border: none;
-  background-color: transparent;
-  color: red;
+body {
+  background: var(--bkg-color);
 }
 
-/* nav items */
-
-#introContainer{
-  color: white;
-  font-size: 50px;
-  background-color: red;
-  justify-items: center;
+a {
+  color: unset;
+  text-decoration: none;
 }
 
-.introMessage{
-  background-color: blue;
-  margin: 10px 0px;
+@media screen and (max-width: 768px) {
+  .section-padding {
+    padding: 4rem;
+  }
+  .section-margin {
+    margin: 4rem;
+  }
 }
 
-#mainPage{
-  display: grid;
-  margin: 0%;
-  grid-template: "a a" auto / 1fr 1fr;
-  height: 100ch;
-  color: white;
+@media screen and (max-width: 550px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+  .section-margin {
+    margin: 4rem 2rem;
+  }
 }
-
-/* intro message */
-
-.pictureReel{
-  background-color: green;
-}
-
-/* intro picture reel */

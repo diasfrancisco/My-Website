@@ -1,5 +1,5 @@
 import React from 'react'
-import './Science.scss'
+import './Science.css'
 
 const Science = () => {
   return (
