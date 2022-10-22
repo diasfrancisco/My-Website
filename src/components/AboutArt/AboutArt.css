@@ -1,0 +1,15 @@
+.art__container-about {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.art__container-quote {
+    color: white;
+    font-size: 40px;
+}
+
+.art__container-author {
+    color: white;
+    font-size: 20px;
+}

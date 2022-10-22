@@ -1,16 +1,21 @@
-import "./App.scss";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
-import { Art, Computing, Gallery, IntroMessage, Navbar, Science } from './components';
-import { ArtInfo, ComputingInfo, ScienceInfo, Footer, Header, Introduction } from './containers'
+import { Footer, Header } from './containers'
+import { Home, Art, Computing, Science, PageNotFound, UnderMaintenance} from './pages'
 
 function App() {
   return (
     <>
+    <Header />
       <Routes>
-        <Route path="/" element={ <Header /> } />
-        <Route path="/" element={ <Introduction /> } />
+        <Route path="/" element={ <Home /> } />
+        <Route path="art" element={ <Art /> } />
+        <Route path="science" element={ <Science /> } />
+        <Route path="computing" element={ <Computing /> } />
+        <Route path="*" element={ <PageNotFound /> } />
       </Routes>
+    <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import './IntroMessage.css'
 
 const IntroMessage = () => {
   return (
-    <div className='introduction__message'>IntroMessage</div>
+    <div className='intro__message'>IntroMessage</div>
   )
 }
 

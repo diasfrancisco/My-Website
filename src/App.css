@@ -1,8 +1,14 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 10px 30px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  height: 100%;
 }
 
 body {
@@ -12,6 +18,10 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+
+.nav__list {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
