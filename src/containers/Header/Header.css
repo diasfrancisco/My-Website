@@ -1,3 +1,32 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.logo__container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
-    color: white;
+    object-fit: cover;
+}
+
+.header__name-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__name {
+    font-family: var(--font-main);
+    color: red;
+    font-size: 1.5rem;
+    text-align: right;
 }

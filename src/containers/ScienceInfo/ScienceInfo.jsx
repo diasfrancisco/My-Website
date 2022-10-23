@@ -1,9 +1,13 @@
 import React from 'react'
 import './ScienceInfo.css'
+import { AboutScience, ScienceImage } from '../../components'
 
 const ScienceInfo = () => {
   return (
-    <div>ScienceInfo</div>
+    <div className='scienceinfo__container'>
+      <ScienceImage />
+      <AboutScience />
+    </div>
   )
 }
 

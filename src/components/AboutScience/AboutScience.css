@@ -1,0 +1,15 @@
+.science__container-about {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.science__container-quote {
+    color: white;
+    font-size: 40px;
+}
+
+.science__container-author {
+    color: white;
+    font-size: 20px;
+}

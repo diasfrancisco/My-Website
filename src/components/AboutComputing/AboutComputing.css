@@ -1,0 +1,15 @@
+.computing__container-about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.computing__container-quote {
+    color: white;
+    font-size: 40px;
+}
+
+.computing__container-author {
+    color: white;
+    font-size: 20px;
+}

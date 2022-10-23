@@ -9,10 +9,10 @@ import {
 const Home = () => {
   return (
     <>
-      <Introduction />
-      <ArtInfo />
-      <ScienceInfo />
-      <ComputingInfo />
+    <Introduction />
+    <ArtInfo />
+    <ComputingInfo />
+    <ScienceInfo />
     </>
   )
 }
