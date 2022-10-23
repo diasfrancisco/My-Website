@@ -1,4 +1,14 @@
+.intro__message-container {
+    position: absolute;
+    bottom: 0;
+}
+
 .intro__message {
     color: white;
     font-size: 3em;
+}
+
+#intro__location {
+    color: red;
+    font-size: 2em;
 }

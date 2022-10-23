@@ -1,7 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
-
 :root {
-    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman';
 
     --bkg-color: black;
 }

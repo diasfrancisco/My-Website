@@ -1,8 +1,8 @@
 .intro__container {
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    position: relative;
     height: 100vh;
     margin-top: -160px;
 }
