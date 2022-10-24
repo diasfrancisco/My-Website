@@ -1,6 +1,6 @@
 .intro__message-container {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
 }
 
 .intro__message {

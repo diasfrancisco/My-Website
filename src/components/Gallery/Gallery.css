@@ -1,6 +1,11 @@
 .gallery {
     color: white;
     position: absolute;
+    z-index: -1;
     top: 50%;
-    right: 50%;
+    left: 50%;
+    width: 1100px;
+    height: 800px;
+    margin-top: -380px;
+    margin-left: -550px;
 }
