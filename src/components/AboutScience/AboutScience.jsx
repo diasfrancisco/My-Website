@@ -1,16 +1,20 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './AboutScience.css'
 
 const Science = () => {
   return (
-    <div className='science__container-about'>
-      <div className='science__container-quote'>
-        <em>
-          "Imagination is more important than knowledge. Knowledge is limited.
-          Imagination circles the world"
-        </em>
+    <div className="about-science__container">
+      <div className="about-science__title">Science</div>
+      <div className='about-science__button-container'>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1 }}
+          className="about-science__button"
+        >
+          FIND OUT MORE
+        </motion.button>
       </div>
-      <div className='science__container-author'>-- Albert Einstein</div>
     </div>
   )
 }

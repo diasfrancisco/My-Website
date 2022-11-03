@@ -1,11 +1,10 @@
 import React from 'react'
 import './ScienceInfo.css'
-import { AboutScience, ScienceImage } from '../../components'
+import { AboutScience } from '../../components'
 
 const ScienceInfo = () => {
   return (
-    <div className='scienceinfo__container'>
-      <ScienceImage />
+    <div className='science-info__container'>
       <AboutScience />
     </div>
   )

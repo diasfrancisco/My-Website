@@ -1,15 +1,52 @@
-.art__container-about {
+.about-art__container {
     display: flex;
     flex-direction: column;
     text-align: right;
+    padding: 0 100px;
 }
 
-.art__container-quote {
-    color: white;
-    font-size: 40px;
+.about-art__title {
+    font-size: 10rem;
+    padding: 0 15px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(42deg, rgba(255, 255, 255, 1) 18%, rgba(244, 0, 255, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(42deg, rgba(255, 255, 255, 1) 18%, rgba(244, 0, 255, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(42deg, rgba(255, 255, 255, 1) 18%, rgba(244, 0, 255, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F400FF', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(42deg, rgba(255, 255, 255, 1) 18%, rgba(244, 0, 255, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(42deg, rgba(255, 255, 255, 1) 18%, rgba(244, 0, 255, 1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
 }
 
-.art__container-author {
+.about-art__button-container {
+    padding: 15px;
+}
+
+.about-art__button {
     color: white;
-    font-size: 20px;
+    background-color: rgb(245, 130, 149);
+    font-size: 1rem;
+    border-radius: 50px;
+    border-color: rgb(245, 130, 149);
+    padding: 15px;
+}
+
+.about-art__button:hover {
+    background-color: rgb(245, 130, 149);
+    border-color: rgb(245, 130, 149);
+    color: white;
 }

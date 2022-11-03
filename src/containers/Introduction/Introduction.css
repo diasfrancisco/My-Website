@@ -1,7 +1,10 @@
 .intro__container {
+    background-image: url('../../assets/images/starry-night.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
+    display: flex;
     position: relative;
+    z-index: -1;
     height: 100vh;
 }

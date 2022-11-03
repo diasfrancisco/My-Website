@@ -1,13 +1,20 @@
 import React from 'react'
 import './AboutArt.css'
+import { motion } from 'framer-motion'
 
 const AboutArt = () => {
   return (
-    <div className="art__container-about">
-      <div className="art__container-quote">
-        <em>"Art washes away from the soul the dust of everyday life"</em>
+    <div className="about-art__container">
+      <div className="about-art__title">Art</div>
+      <div className='about-art__button-container'>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1 }}
+          className="about-art__button"
+        >
+          FIND OUT MORE
+        </motion.button>
       </div>
-      <div className="art__container-author">-- Pablo Picasso</div>
     </div>
   )
 }

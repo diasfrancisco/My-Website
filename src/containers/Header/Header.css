@@ -5,12 +5,14 @@
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
 }
 
 .header-name__container {
@@ -22,7 +24,7 @@
 
 .header-name {
     font-family: var(--font-main);
-    color: red;
-    font-size: 2.5rem;
+    color: white;
+    font-size: 2rem;
     text-align: right;
 }
