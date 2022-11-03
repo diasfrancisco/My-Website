@@ -1,5 +1,5 @@
 .gallery {
-    color: white;
+    background-color: var(--tp-bkg-color);
     position: absolute;
     z-index: -1;
     top: 50%;

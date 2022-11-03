@@ -4,10 +4,10 @@ import './PageNotFound.css'
 const PageNotFound = () => {
   return (
     <>
-    <div className='error__message-container'>
-        <div className='error__message'>404</div>
-        <div className='error__message'>Page Not Found</div>
-    </div>
+      <div className="error-message__container">
+        <div className="error-message">404</div>
+        <div className="error-message">Page Not Found</div>
+      </div>
     </>
   )
 }

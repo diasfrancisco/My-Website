@@ -1,4 +1,3 @@
-export { default as Navbar } from './Navbar/Navbar';
 export { default as IntroMessage } from './IntroMessage/IntroMessage';
 export { default as Gallery } from './Gallery/Gallery';
 export { default as ArtImage } from './ArtImage/ArtImage';

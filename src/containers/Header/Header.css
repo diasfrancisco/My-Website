@@ -2,31 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
-}
-
-.logo__container {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
-.header__name-container {
+.header-name__container {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
 }
 
-.header__name {
+.header-name {
     font-family: var(--font-main);
     color: red;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: right;
 }

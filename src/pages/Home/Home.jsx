@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import {
   ArtInfo,
   ComputingInfo,
@@ -8,12 +9,12 @@ import {
 
 const Home = () => {
   return (
-    <>
-    <Introduction />
-    <ArtInfo />
-    <ComputingInfo />
-    <ScienceInfo />
-    </>
+    <div id='home-container'>
+      <Introduction />
+      <ArtInfo />
+      <ComputingInfo />
+      <ScienceInfo />
+    </div>
   )
 }
 

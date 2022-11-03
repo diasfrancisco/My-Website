@@ -14,15 +14,19 @@ import {
 function App() {
   return (
     <>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="art" element={<Art />} />
-      <Route path="science" element={<Science />} />
-      <Route path="computing" element={<Computing />} />
-      <Route path="*" element={<PageNotFound />} />
-    </Routes>
-    <Footer />
+      <nav>
+        <Header />
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="art" element={<Art />} />
+        <Route path="science" element={<Science />} />
+        <Route path="computing" element={<Computing />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

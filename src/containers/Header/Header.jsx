@@ -5,12 +5,12 @@ import logo from '../../assets/images/cogwheel-altered.png'
 const Header = () => {
   return (
     <div className="header__container">
-      <div className="logo__container">
+      <a href="/">
         <img className="logo" src={logo} alt="logo" />
-      </div>
-      <div className="header__name-container">
-        <div className="header__name">Francisco</div>
-        <div className="header__name">Dias</div>
+      </a>
+      <div className="header-name__container">
+        <div className="header-name">Francisco</div>
+        <div className="header-name">Dias</div>
       </div>
     </div>
   )

@@ -1,4 +1,9 @@
-.error__message-container {
+* {
+    margin: 0;
+}
+
+.error-message__container {
+    margin: -180px 100px -170px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +12,7 @@
     z-index: -1;
 }
 
-.error__message {
+.error-message {
     color: white;
     font-size: 50px;
 }

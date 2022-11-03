@@ -6,21 +6,25 @@
   overflow-x: hidden;
 }
 
-html {
+html, body {
   margin: 0;
-  padding: 0;
-  height: 100%;
 }
 
 body {
   background: var(--bkg-color);
-  padding: 0px 180px;
-  position: absolute;
 }
 
 a {
   color: unset;
   text-decoration: none;
+}
+
+nav {
+  padding: 80px 100px 0px 100px;
+}
+
+footer {
+  padding: 0px 100px 80px 100px;
 }
 
 ::-webkit-scrollbar {

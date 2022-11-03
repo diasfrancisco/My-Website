@@ -1,14 +1,14 @@
-.intro__message-container {
-    position: absolute;
-    bottom: 80px;
+.intro-message__container {
+  position: absolute;
+  bottom: 80px;
 }
 
 .intro__message {
-    color: white;
-    font-size: 3em;
+  color: white;
+  font-size: 3em;
 }
 
 #intro__location {
-    color: red;
-    font-size: 2em;
+  color: red;
+  font-size: 2em;
 }
