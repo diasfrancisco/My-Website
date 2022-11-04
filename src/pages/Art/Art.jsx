@@ -3,7 +3,7 @@ import './Art.css'
 
 const Art = () => {
   return (
-    <div>Art</div>
+    <div className='art-carousel__container'>Art</div>
   )
 }
 

@@ -7,6 +7,8 @@ import {
   Art,
   Computing,
   Science,
+  About,
+  Contact,
   PageNotFound,
   UnderMaintenance,
 } from './pages'
@@ -19,9 +21,11 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="art" element={<Art />} />
-        <Route path="science" element={<Science />} />
-        <Route path="computing" element={<Computing />} />
+        <Route path="art" element={<UnderMaintenance />} />
+        <Route path="science" element={<UnderMaintenance />} />
+        <Route path="computing" element={<UnderMaintenance />} />
+        <Route path="about" element={<UnderMaintenance />} />
+        <Route path="contact" element={<UnderMaintenance />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <footer>
