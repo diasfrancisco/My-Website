@@ -6,11 +6,12 @@ import './UnderMaintenance.css'
 const UnderMaintenance = () => {
   return (
     <div className="maintenance__container">
-      <div className='helmet-icon'>
+      <div className="helmet-icon">
         <FontAwesomeIcon icon={faHelmetSafety}></FontAwesomeIcon>
       </div>
       <div className="maintenance-message">
-        Page is under maintenance. Sorry for the inconvenience!
+        <p>Page is under maintenance</p>
+        <p>Sorry for the inconvenience!</p>
       </div>
     </div>
   )
