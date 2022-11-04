@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+nav {
+  padding: 80px 100px 0px 100px;
+}
+
+footer {
+  padding: 0px 100px 80px 100px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

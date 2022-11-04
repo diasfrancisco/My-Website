@@ -1,0 +1,62 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 999;
+}
+
+.policy__container,
+.all-links__container {
+  font-size: 1.2rem;
+}
+
+.netlify-link {
+    color: red;
+}
+
+.netlify-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.all-links__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-link {
+  padding: 7px 0;
+}
+
+.social-media-icons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.social-icon {
+  padding: 0 30px;
+}
+
+#twitter-icon:hover {
+  color: rgb(49,164,241);
+}
+
+#instagram-icon:hover {
+  color: rgb(252,3,186);
+}
+
+#youtube-icon:hover {
+  color: rgb(255,26,26);
+}
+
+#linkedin-icon:hover {
+  color: rgb(90,176,247);
+}
+
+#github-icon:hover {
+  color: rgb(232,230,227);
+}

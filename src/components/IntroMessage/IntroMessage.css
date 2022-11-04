@@ -1,0 +1,15 @@
+.intro-message__container {
+  position: absolute;
+  bottom: 80px;
+  margin: 0 100px;
+}
+
+.intro__message {
+  color: white;
+  font-size: 3em;
+}
+
+#intro__location {
+  color: red;
+  font-size: 2em;
+}

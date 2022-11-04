@@ -1,0 +1,9 @@
+.art-info__container {
+    background-image: url('../../assets/images/chain-island.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

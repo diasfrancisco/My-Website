@@ -1,0 +1,10 @@
+* {
+    background-color: var(--tp-bkg-color);
+}
+
+#home-container {
+    position: relative;
+    margin-top: -154px;
+    padding: 0;
+    top: 0;
+}
