@@ -1,12 +1,13 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiceD20 } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
-import logo from '../../assets/images/gear-solid.svg'
 
 const Header = () => {
   return (
     <div className="header__container">
       <a href="/">
-        <img className="logo" src={logo} alt="logo" />
+        <FontAwesomeIcon className='logo' icon={faDiceD20} />
       </a>
       <div className="header-name__container">
         <div className="header-name">Francisco</div>

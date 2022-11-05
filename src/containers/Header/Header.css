@@ -5,14 +5,8 @@
 }
 
 .logo {
-    background-color: transparent;
-    border-radius: 50%;
-    transform: rotate(90deg);
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    font-size: var(--fs-logo);
 }
 
 .header-name__container {
@@ -25,6 +19,6 @@
 .header-name {
     font-family: var(--font-main);
     color: white;
-    font-size: 2rem;
+    font-size: var(--fs-name-header);
     text-align: right;
 }

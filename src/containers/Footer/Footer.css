@@ -12,13 +12,19 @@
   font-size: var(--fs-policy-links-footer);
 }
 
+.copyright-host,
+.privacy-cookie {
+  padding: 10px 0;
+}
+
 .netlify-link {
-    color: red;
+  color: red;
 }
 
 .netlify-link:hover {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .all-links__container {
@@ -28,6 +34,12 @@
 
 .page-link {
   padding: 7px 0;
+}
+
+.page-link:hover {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .social-media-icons__container {
@@ -42,21 +54,21 @@
 }
 
 #twitter-icon:hover {
-  color: rgb(49,164,241);
+  color: rgb(49, 164, 241);
 }
 
 #instagram-icon:hover {
-  color: rgb(252,3,186);
+  color: rgb(252, 3, 186);
 }
 
 #youtube-icon:hover {
-  color: rgb(255,26,26);
+  color: rgb(255, 26, 26);
 }
 
 #linkedin-icon:hover {
-  color: rgb(90,176,247);
+  color: rgb(90, 176, 247);
 }
 
 #github-icon:hover {
-  color: rgb(232,230,227);
+  color: rgb(232, 230, 227);
 }

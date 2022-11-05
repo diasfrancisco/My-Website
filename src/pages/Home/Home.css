@@ -4,7 +4,7 @@
 
 #home-container {
     position: relative;
-    margin-top: calc(-8vh + -74px);
+    margin-top: var(--marg-home);
     padding: 0;
 }
 

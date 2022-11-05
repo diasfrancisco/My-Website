@@ -2,6 +2,7 @@
     background-image: url('../../assets/images/starry-night.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
     display: flex;
     position: relative;
