@@ -20,11 +20,11 @@ a {
 }
 
 nav {
-  padding: 80px 100px 0px 100px;
+  padding: 8vh 5% 0 5%;
 }
 
 footer {
-  padding: 0px 100px 80px 100px;
+  padding: 2% 5% 2% 5%;
 }
 
 ::-webkit-scrollbar {

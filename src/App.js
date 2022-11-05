@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="art" element={<UnderMaintenance />} />
         <Route path="science" element={<UnderMaintenance />} />
-        <Route path="computing" element={<UnderMaintenance />} />
+        <Route path="computing" element={<Computing />} />
         <Route path="about" element={<UnderMaintenance />} />
         <Route path="contact" element={<UnderMaintenance />} />
         <Route path="*" element={<PageNotFound />} />

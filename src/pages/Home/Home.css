@@ -4,7 +4,10 @@
 
 #home-container {
     position: relative;
-    margin-top: -154px;
+    margin-top: calc(-8vh + -74px);
     padding: 0;
-    top: 0;
+}
+
+#home-container > * > * {
+    margin: 0 5%;
 }

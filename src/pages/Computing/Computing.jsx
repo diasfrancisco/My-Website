@@ -1,10 +1,9 @@
-import React from 'react'
-import './Computing.css'
+import React from "react";
+import "./Computing.css";
+import { GithubDashboard } from "../../containers";
 
 const Computing = () => {
-  return (
-    <div>Computing</div>
-  )
-}
+  return <GithubDashboard />;
+};
 
-export default Computing
+export default Computing;

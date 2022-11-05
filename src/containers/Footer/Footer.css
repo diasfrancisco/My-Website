@@ -9,7 +9,7 @@
 
 .policy__container,
 .all-links__container {
-  font-size: 1.2rem;
+  font-size: var(--fs-policy-links-footer);
 }
 
 .netlify-link {
@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: var(--fs-icons-footer);
 }
 
 .social-icon {
