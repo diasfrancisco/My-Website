@@ -2,12 +2,12 @@
     background-color: var(--tp-bkg-color);
 }
 
-#home-container {
+#home__container {
     position: relative;
     margin-top: var(--marg-home);
     padding: 0;
 }
 
-#home-container > * > * {
+#home__container > * > * {
     margin: 0 5%;
 }

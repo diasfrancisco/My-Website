@@ -1,15 +1,14 @@
 .intro-message__container {
   position: absolute;
   bottom: 80px;
-
 }
 
 .intro__message {
   color: white;
-  font-size: var(--fs-professions);
+  font-size: var(--fs-professions-home);
 }
 
 #intro__location {
   color: red;
-  font-size: var(--fs-location);
+  font-size: var(--fs-location-home);
 }

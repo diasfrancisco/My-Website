@@ -1,12 +1,12 @@
 :root {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 
-  --fs-professions: 3rem;
-  --fs-location: 2rem;
+  --fs-professions-home: 3rem;
+  --fs-location-home: 2rem;
   --fs-profession-title-home: 10rem;
   --fs-policy-links-footer: 1.2rem;
   --fs-icons-footer: 2rem;
-  --fs-logo: 3.5rem;
+  --fs-logo-header: 3.5rem;
   --fs-name-header: 2rem;
 
   --marg-home: calc(-8vh + -74px);
@@ -17,8 +17,8 @@
 
 @media screen and (min-width: 401px) and (max-width: 820px) {
   :root {
-    --fs-professions: 3rem;
-    --fs-location: 2rem;
+    --fs-professions-home: 3rem;
+    --fs-location-home: 2rem;
     --fs-profession-title-home: 8rem;
     --fs-policy-links-footer: 1rem;
     --fs-icons-footer: 1.3rem;
@@ -39,7 +39,8 @@
     grid-area: 1 / 1 / span 1 / span 1;
   }
 
-  .copyright-host, .privacy-cookie {
+  .copyright-host,
+  .privacy-cookie {
     padding: 5px 0;
   }
 
@@ -54,12 +55,12 @@
 
 @media screen and (max-width: 400px) {
   :root {
-    --fs-professions: 1.8rem;
-    --fs-location: 1.5rem;
+    --fs-professions-home: 1.8rem;
+    --fs-location-home: 1.5rem;
     --fs-profession-title-home: 4.5rem;
     --fs-policy-links-footer: 0.8rem;
     --fs-icons-footer: 0.9rem;
-    --fs-logo: 2.5rem;
+    --fs-logo-header: 2.5rem;
     --fs-name-header: 1.5rem;
 
     --marg-home: calc(-8vh + -54px);
@@ -80,7 +81,8 @@
     grid-area: 1 / 1 / span 1 / span 1;
   }
 
-  .copyright-host, .privacy-cookie {
+  .copyright-host,
+  .privacy-cookie {
     padding: 5px 0;
   }
 

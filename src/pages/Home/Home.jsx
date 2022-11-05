@@ -9,7 +9,7 @@ import {
 
 const Home = () => {
   return (
-    <div id='home-container'>
+    <div id='home__container'>
       <Introduction />
       <ArtInfo />
       <ComputingInfo />
