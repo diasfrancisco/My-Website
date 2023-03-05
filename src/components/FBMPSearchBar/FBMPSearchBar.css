@@ -1,0 +1,28 @@
+#fb_searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: none;
+    width: 35%;
+    height: 90px;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--10);
+    background-color: white;
+}
+
+input[type="text"] {
+    padding-left: 20px;
+}
+
+#search_icon {
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+    color: black;
+}

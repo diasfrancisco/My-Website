@@ -1,6 +1,7 @@
 import React from "react";
-import "./FBMarketPlace.css";
 import FBIphone from "../../assets/images/fb_iphone.png"
+import { FBMPSearchBar } from "../../components";
+import "./FBMarketPlace.css";
 
 const FBMarketPlace = () => {
   return (
@@ -12,8 +13,9 @@ const FBMarketPlace = () => {
         <em className="author">
           Francisco Dias
         </em>
+        < FBMPSearchBar />
       </div>
-      <img src={FBIphone}></img>
+      <img src={FBIphone} alt="iphone png with facebook logo"></img>
     </div>
   );
 };
