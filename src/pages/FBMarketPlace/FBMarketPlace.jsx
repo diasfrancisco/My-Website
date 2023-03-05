@@ -11,7 +11,7 @@ const FBMarketPlace = () => {
         Facebook MarketPlace Search Ranking System
         </div>
         <em className="author">
-          Francisco Dias
+          Dias F. R.
         </em>
         < FBMPSearchBar />
       </div>

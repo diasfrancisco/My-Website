@@ -20,6 +20,10 @@ input[type="text"] {
     padding-left: 20px;
 }
 
+input[type="text"]:focus {
+    outline: none;
+}
+
 #search_icon {
     position: absolute;
     font-size: 20px;
