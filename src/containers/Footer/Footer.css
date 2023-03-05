@@ -2,23 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  padding: 0 10%;
+  bottom: 3vh;
   color: white;
-  position: relative;
-  z-index: 999;
 }
 
 .policy__container,
 .all-links__container {
-  font-size: 1.2rem;
+  font-size: var(--fs-policy-links-footer);
+}
+
+.copyright-host,
+.privacy-cookie {
+  padding: 10px 0;
 }
 
 .netlify-link {
-    color: red;
+  color: red;
 }
 
 .netlify-link:hover {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .all-links__container {
@@ -30,11 +39,17 @@
   padding: 7px 0;
 }
 
+.page-link:hover {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .social-media-icons__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: var(--fs-icons-footer);
 }
 
 .social-icon {
@@ -42,21 +57,21 @@
 }
 
 #twitter-icon:hover {
-  color: rgb(49,164,241);
+  color: rgb(49, 164, 241);
 }
 
 #instagram-icon:hover {
-  color: rgb(252,3,186);
+  color: rgb(252, 3, 186);
 }
 
 #youtube-icon:hover {
-  color: rgb(255,26,26);
+  color: rgb(255, 26, 26);
 }
 
 #linkedin-icon:hover {
-  color: rgb(90,176,247);
+  color: rgb(90, 176, 247);
 }
 
 #github-icon:hover {
-  color: rgb(232,230,227);
+  color: rgb(232, 230, 227);
 }

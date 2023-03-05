@@ -10,8 +10,8 @@ const UnderMaintenance = () => {
         <FontAwesomeIcon icon={faHelmetSafety}></FontAwesomeIcon>
       </div>
       <div className="maintenance-message">
-        <p>Page is under maintenance</p>
-        <p>Sorry for the inconvenience!</p>
+        <div>Page is under maintenance</div>
+        <div>Sorry for the inconvenience!</div>
       </div>
     </div>
   )
