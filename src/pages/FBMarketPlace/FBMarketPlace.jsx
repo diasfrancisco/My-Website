@@ -3,8 +3,10 @@ import "./FBMarketPlace.css";
 
 const FBMarketPlace = () => {
   return (
-    <div>
+    <div id="fb_container">
+      <div className="title">
       Facebook MarketPlace Search Ranking System
+      </div>
     </div>
   );
 };

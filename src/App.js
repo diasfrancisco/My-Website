@@ -17,22 +17,20 @@ import {
 function App() {
   return (
     <>
-      <nav>
-        <Header />
-      </nav>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="art" element={<UnderMaintenance />} />
         <Route path="science" element={<UnderMaintenance />} />
-        <Route path="computing" element={<Computing />} />
+        <Route path="computing">
+          <Route index element={<Computing />} />
           <Route path="fbmp" element={<FBMarketPlace />} />
+        </Route>
         <Route path="about" element={<UnderMaintenance />} />
         <Route path="contact" element={<UnderMaintenance />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   )
 }

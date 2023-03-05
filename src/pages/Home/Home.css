@@ -4,12 +4,11 @@
 
 #home__container {
     position: relative;
-    margin-top: var(--marg-home);
-    padding: 0;
+
 }
 
 #home__container > * > * {
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 .intro__container {
@@ -17,11 +16,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    height: 100vh;
     display: flex;
     position: relative;
-    z-index: -1;
-    height: 100vh;
+}
+
+.intro__container > * {
+    margin: 0 5%;
 }
 
 .art-info__container {

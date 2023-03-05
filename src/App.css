@@ -19,14 +19,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  padding: 8vh 5% 0 5%;
-}
-
-footer {
-  padding: 2% 5% 2% 5%;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
