@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiceD20 } from '@fortawesome/free-solid-svg-icons'
 import './NavBar.css'
-import { About } from '../../pages'
 
 const Header = () => {
   return (

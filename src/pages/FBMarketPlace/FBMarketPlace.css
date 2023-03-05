@@ -1,9 +1,31 @@
 #fb_container {
-    margin: 0 5%;
+    background-color: rgb(24,106,180);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.fb_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.fb_text > * {
+    padding: 20px 0;
 }
 
 .title {
-    color: white;
-    height: 100vh;
-    
+    font-size: var(--90);
+}
+
+.author {
+    font-size: var(--40);
+}
+
+img {
+    height: 40%;
+    width: 40%;
 }
