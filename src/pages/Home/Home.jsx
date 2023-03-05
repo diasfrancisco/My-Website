@@ -1,19 +1,27 @@
 import React from 'react'
 import './Home.css'
 import {
-  ArtInfo,
-  ComputingInfo,
-  Introduction,
-  ScienceInfo,
-} from '../../containers'
+  IntroMessage,
+  AboutArt,
+  AboutComputing,
+  AboutScience
+} from '../../components'
 
 const Home = () => {
   return (
     <div id='home__container'>
-      <Introduction />
-      <ArtInfo />
-      <ComputingInfo />
-      <ScienceInfo />
+      <div className="intro__container">
+        <IntroMessage />
+      </div>
+      <div className='art-info__container'>
+        <AboutArt />
+      </div>
+      <div className='computinginfo__container'>
+        <AboutComputing />
+      </div>
+      <div className='science-info__container'>
+        <AboutScience />
+      </div>
     </div>
   )
 }

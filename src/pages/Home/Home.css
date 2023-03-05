@@ -11,3 +11,48 @@
 #home__container > * > * {
     margin: 0 5%;
 }
+
+.intro__container {
+    background-image: url('../../assets/images/starry-night.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+}
+
+.art-info__container {
+    background-image: url('../../assets/images/chain-island.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.computinginfo__container {
+    background-image: url('../../assets/images/blue-room.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.science-info__container {
+    background-image: url('../../assets/images/deep-forest.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
