@@ -1,7 +1,9 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-
-import { Footer, Header } from './containers'
+import {
+  Footer,
+  NavBar 
+} from './containers'
 import {
   Home,
   Art,
@@ -16,8 +18,8 @@ import {
 
 function App() {
   return (
-    <>
-      <Header />
+    <div id="full_page">
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="art" element={<UnderMaintenance />} />
@@ -31,7 +33,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 

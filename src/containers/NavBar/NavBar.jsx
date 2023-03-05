@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiceD20 } from '@fortawesome/free-solid-svg-icons'
 import './NavBar.css'
 
-const Header = () => {
+const NavBar = () => {
   return (
     <div className="nav_container">
       <a href="/">
@@ -20,4 +20,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default NavBar

@@ -22,3 +22,7 @@ a {
 ::-webkit-scrollbar {
   display: none;
 }
+
+#full_page {
+  position: relative;
+}
