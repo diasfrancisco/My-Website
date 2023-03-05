@@ -1,18 +1,19 @@
 .maintenance__container {
-  margin-top: -154px;
   height: 100vh;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .helmet-icon {
-    background-color: white;
-    border-radius: 50%;
-    padding: 30px;
-  color: rgb(247,211,0);
-  font-size: 10rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 30px;
+  color: rgb(247, 211, 0);
+  font-size: 8rem;
 }
 
 .maintenance-message {

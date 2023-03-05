@@ -1,7 +1,9 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-
-import { Footer, Header } from './containers'
+import {
+  Footer,
+  NavBar 
+} from './containers'
 import {
   Home,
   Art,
@@ -11,27 +13,27 @@ import {
   Contact,
   PageNotFound,
   UnderMaintenance,
+  FBMarketPlace
 } from './pages'
 
 function App() {
   return (
-    <>
-      <nav>
-        <Header />
-      </nav>
+    <div id="full_page">
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="art" element={<UnderMaintenance />} />
         <Route path="science" element={<UnderMaintenance />} />
-        <Route path="computing" element={<UnderMaintenance />} />
+        <Route path="computing">
+          <Route index element={<Computing />} />
+          <Route path="fbmp" element={<FBMarketPlace />} />
+        </Route>
         <Route path="about" element={<UnderMaintenance />} />
         <Route path="contact" element={<UnderMaintenance />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+      <Footer />
+    </div>
   )
 }
 

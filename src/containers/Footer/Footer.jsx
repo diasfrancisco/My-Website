@@ -22,21 +22,11 @@ const Footer = () => {
         <div className="privacy-cookie">Privacy and Cookie policy</div>
       </div>
       <div className="all-links__container">
-        <Link to="art" className="page-link">
-          Art
-        </Link>
-        <Link to="computing" className="page-link">
-          Computing
-        </Link>
-        <Link to="science" className="page-link">
-          Science
-        </Link>
-        <Link to="about" className="page-link">
-          About
-        </Link>
-        <Link to="contact" className="page-link">
-          Contact
-        </Link>
+        <Link to="art" className="page-link">Art</Link>
+        <Link to="computing" className="page-link">Computing</Link>
+        <Link to="science" className="page-link">Science</Link>
+        <Link to="about" className="page-link">About</Link>
+        <Link to="contact" className="page-link">Contact</Link>
       </div>
       <div className="social-media-icons__container">
         <FontAwesomeIcon

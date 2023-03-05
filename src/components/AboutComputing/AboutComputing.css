@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 0 100px;
+    padding: 0;
 }
 
 .about-computing__title {
-    font-size: 10rem;
+    font-size: var(--fs-profession-title-home);
     padding: 0 15px;
 
     /* ff 3.6+ */

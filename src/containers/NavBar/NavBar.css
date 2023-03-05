@@ -1,0 +1,23 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    padding: 0 10%;
+    top: 6vh;
+}
+
+.logo {
+    color: white;
+    font-size: var(--fs-logo-header);
+}
+
+.nav_list {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    font-size: var(--fs-location-home);
+}
