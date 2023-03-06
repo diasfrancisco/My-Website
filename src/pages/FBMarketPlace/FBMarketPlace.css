@@ -1,5 +1,10 @@
-#fb_container {
+body {
     background-color: rgb(24,106,180);
+    
+}
+
+/* Main page */
+#fb_container {
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -13,7 +18,7 @@
     color: white;
 }
 
-.fb_text > * {
+.fb_text > *, .fb_text > * > * {
     padding: 20px 5px;
 }
 
@@ -28,4 +33,111 @@
 img {
     height: 40%;
     width: 40%;
+}
+
+em {
+    display: flex;
+    align-items: center;
+}
+
+#author_icon {
+    padding: 9px 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.title_and_name {
+    margin-top: -200px;
+    margin-bottom: 30px;
+}
+
+
+/* Introduction */
+#intro_container {
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.fb_h1 {
+    font-size: var(--70);
+    color: white;
+    text-decoration: underline 3px;
+    text-underline-offset: 8px;
+}
+
+.intro_desc {
+    color: white;
+    font-size: var(--40);
+    padding-top: 20px;
+}
+
+/* Model */
+#fb_model_container {
+    height: 100vh;
+    padding: 2vh 10% 20vh 10%;
+}
+
+#fb_model_h1 {
+    padding: 0 10%;
+}
+
+.fbmp_copy {
+    background-color: rgb(18, 87, 148);
+    position: relative;
+    height: stretch;
+    width: stretch;
+    border-radius: 20px;
+    overflow: visible;
+    display: grid;
+    grid-template:
+    "header header" 2fr
+    "searchbar products" 7fr
+    "searchbar products" 7fr / 3fr 7fr;
+}
+
+.fbmp_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+    grid-area: header;
+}
+
+.fbmp_logo {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fbmp_logo > img {
+    height: 40px;
+    width: 40px;
+}
+
+.stamp > img {
+    width: 60%;
+    height: 60%;
+}
+
+.fbmp_title {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: var(--40);
+    padding: 0 1%;
+}
+
+.products_tile {
+    color: white;
+    font-size: var(--30);
+    grid-area: products;
+}
+
+#search_bar_fbmp {
+    grid-area: searchbar;
+    width: 100%;
 }
