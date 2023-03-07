@@ -19,7 +19,7 @@ const FBMarketPlace = () => {
             <div id="author_icon"><FontAwesomeIcon icon={faUser} /></div>Dias F. R.
           </em>
         </div>
-        < FBMPSearchBar />
+        < FBMPSearchBar location={'fb_searchbar_main'} />
       </div>
       <img src={FBIphone} alt="iphone png with facebook logo"></img>
       
@@ -39,7 +39,7 @@ const FBMarketPlace = () => {
             </div>
             <div className="fbmp_title">MarketPlace</div>
           </div>
-          <FBMPSearchBar id="search_bar_fbmp" />
+          <FBMPSearchBar location={'fb_searchbar_model'} />
           <div className="products_tile">
             Products go here
           </div>

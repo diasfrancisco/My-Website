@@ -93,7 +93,7 @@ em {
     grid-template:
     "header header" 2fr
     "searchbar products" 7fr
-    "searchbar products" 7fr / 3fr 7fr;
+    "searchbar products" 7fr / 2fr 8fr;
 }
 
 .fbmp_header {
@@ -133,11 +133,11 @@ em {
 
 .products_tile {
     color: white;
+    margin: 1% 1%;
     font-size: var(--30);
     grid-area: products;
 }
 
 #search_bar_fbmp {
     grid-area: searchbar;
-    width: 100%;
 }
