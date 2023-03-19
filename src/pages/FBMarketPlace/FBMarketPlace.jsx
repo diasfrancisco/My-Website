@@ -3,6 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import FBIphone from "../../assets/images/fb_iphone.png"
 import FBMPlogo from "../../assets/images/facebook_mp.png"
+import FBMPuml from "../../assets/images/fbmp_uml.jpg"
+import Python from "../../assets/images/python.png"
+import Pandas from "../../assets/images/pandas.png"
+import NumPy from "../../assets/images/numpy.png"
+import PyTorch from "../../assets/images/pytorch.png"
+import GitHub from "../../assets/images/github.png"
+import Docker from "../../assets/images/docker.png"
+import Kubernetes from "../../assets/images/kubernetes.png"
+import AWS from "../../assets/images/aws.png"
+import FAISS from "../../assets/images/faiss.png"
+import FastAPI from "../../assets/images/fastapi.png"
 import { FBMPSearchBar } from "../../components";
 import "./FBMarketPlace.css";
 
@@ -13,7 +24,7 @@ const FBMarketPlace = () => {
       <div className="fb_text">
         <div className="title_and_name">
           <div className="title">
-          Facebook MarketPlace Search Ranking System
+          Facebook Marketplace Search Ranking System
           </div>
           <em className="author">
             <div id="author_icon"><FontAwesomeIcon icon={faUser} /></div>Dias F. R.
@@ -22,29 +33,65 @@ const FBMarketPlace = () => {
         < FBMPSearchBar location={'fb_searchbar_main'} />
       </div>
       <img src={FBIphone} alt="iphone png with facebook logo"></img>
-      
     </div>
-      <div id="intro_container">
-        <h1 className="fb_h1">Introduction</h1>
-        <p className="intro_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut beatae, dolores laudantium veritatis, est inventore labore cupiditate ab quo doloremque aliquam fugiat deleniti? Ab, perferendis? Nemo necessitatibus possimus recusandae sit explicabo illo quasi, labore commodi assumenda quo, quae voluptatum corporis ut, ab dolorum quia provident eveniet rerum quos! Eligendi illum accusantium, adipisci unde praesentium voluptas eaque officiis ad accusamus in. Accusantium, ducimus. Dolores autem fugit enim ipsum beatae eligendi repellat numquam ullam accusamus excepturi laboriosam provident assumenda fugiat vel dignissimos adipisci sint nulla, magnam esse! Suscipit rerum, repellat eligendi asperiores a perspiciatis? Accusamus, ipsa repudiandae odio quisquam harum tempore nemo ipsum pariatur, magnam dolores, odit beatae assumenda reiciendis eveniet quibusdam? Provident, amet reiciendis? Quod laudantium dignissimos labore eaque repellat ducimus quasi repellendus saepe ipsam, esse eveniet voluptate dolor adipisci impedit quos atque necessitatibus architecto maxime! Exercitationem impedit ea soluta autem? Ab, reprehenderit laudantium quo perferendis sint asperiores! Facere obcaecati non fugit, veniam consectetur cupiditate laudantium ullam ipsum quibusdam natus culpa nihil molestiae? Inventore quo vero ipsum corporis itaque assumenda ratione, ut fugiat sed? Excepturi aut, libero recusandae expedita incidunt voluptas saepe mollitia nihil quo exercitationem! Nisi magni rem earum voluptatum expedita culpa nulla harum consequuntur, perspiciatis adipisci, nostrum dolore eligendi. Error autem sint iusto illum eum culpa modi aut quae ipsa nisi suscipit, deserunt, totam corrupti libero maxime consequuntur maiores repellendus voluptates? Saepe aliquam quia enim voluptas, illum voluptatum esse voluptatibus dicta facere magnam reiciendis accusantium totam pariatur voluptate perferendis assumenda corporis excepturi obcaecati debitis vel quam maxime. Fugit deleniti vitae tenetur! Laudantium necessitatibus eaque rerum fugiat vitae enim minus. Quisquam, doloremque totam debitis earum minus ratione, sapiente impedit, nesciunt cumque asperiores unde illum! Dolores, facere voluptas. Quas dolorum corporis beatae? Mollitia perferendis odio maiores cumque itaque repudiandae illo illum rem nesciunt eveniet laudantium labore commodi error eius quidem aperiam hic, nobis, a suscipit! Amet reprehenderit eum nemo velit ipsa quos aliquid iusto, laborum natus dolorem omnis, repudiandae commodi, hic odio possimus consequatur delectus deleniti quia eligendi voluptas. Adipisci nesciunt est ut aut alias quisquam qui voluptate debitis sit tempore natus ad eveniet reiciendis officiis recusandae soluta provident consectetur nulla explicabo amet, deserunt beatae. Iste iure obcaecati eum, sed doloremque officia quibusdam consequatur numquam dolore accusantium veniam optio ipsa harum illum culpa veritatis necessitatibus natus facere eaque, ducimus omnis non quasi quos! Laboriosam quibusdam, sed accusamus id eius cum voluptatum praesentium perferendis libero at optio aperiam dolore repellat obcaecati, nostrum fuga! Maxime sit vitae officia perferendis ex dolore aut, nam neque assumenda aliquam dolorem incidunt voluptatum iusto! Facere vero totam dolorum sed quod repudiandae, fuga ipsa accusantium quidem quibusdam esse error! Odit aspernatur sequi, a distinctio temporibus libero perspiciatis quod harum blanditiis ut adipisci accusamus! Est, magnam totam consectetur eaque cum beatae ratione! Architecto aliquam molestiae, odio similique cumque totam ad error ipsa officia earum quae odit mollitia vero quasi rem porro nihil? Distinctio, repellendus eligendi. Doloremque deserunt, porro, consequatur itaque suscipit illum natus dolores, officia consectetur voluptate laborum nam voluptatem! Maxime placeat repellendus minus doloribus. Rerum enim accusamus dolore?</p>
-        <h1 className="fb_h1">Tools</h1>
-        <h1 className="fb_h1" id="fb_model_h1">Multimodal Model</h1>
+    <div id="intro_container">
+      <h1 className="fb_h1">Introduction</h1>
+      <p className="intro_desc">Facebook Marketplace is a key service hosted by Facebook. It is a destination for people to discover, buy and sell items in their area or worldwide. But how does it work?</p>
+      <p className="intro_desc">In this article I will be covering a project I worked on as part of my online course at <a href="https://www.theaicore.com/">AiCore</a>.
+                                My project was based around the production of the image model used by Facebook Marketplace to classify and rank products listed by users.
+                                To get a general grasp of the overall system that defines the Marketplace, please refer to <a href="https://youtu.be/1Z5V2VrHTTA">this
+                                </a> excellent video developed by AiCore x MLOps.community.</p>
+      <p className="intro_desc">However, if you're more interested in a quick overview, here is a simple UML diagram describing the process.</p>
+      <figure id="uml_container">
+        <img className="uml" src={FBMPuml} alt="a uml diagram describing the overall process behind Facebook's Marketplace"></img>
+        <figcaption className="uml_caption">Fig 1. A UML diagram outlining the overall Facebook Marketplace system. Please note: Not all the services defined above are the ones directly used by Facebook</figcaption>
+      </figure>
+      <p className="intro_desc">In essence, image and text data are extracted from databases such as Amazon S3 and Amazon RDS and preprocessed to be fed into their respective models.
+                                The data is split into training, testing and validation sets, coupled into random batches and passed into the CNNs for modelling.</p>
+      <p className="intro_desc">The image model is a pre-trained ResNet-50 model. This model is a 50-layer deep neural network that does a 1000 way classification on the famous ImageNet dataset.
+                                By abstracting away the final fully connected layer and adding an output size that fits the task of classifying the items in the Marketplace, we are able to
+                                train the same model on a new task. This is known as transfer learning. Furthermore, the text understanding model is a CNN trained on the text associated with each image.
+                                Both models finds meaningful representations of each product in the form of a vector and concatenates this to form the final search index. This is a vector that
+                                most closely represents the product.</p>
+      <p className="intro_desc">Using these models we are able to create a feature store of the product embeddings. This feature store can be in the form of a json with a key:value pair
+                                denoting the images name to their vector embedding.</p>
+      <p className="intro_desc">When users input a query into the search field, a seperate text understanding model converts this into a vector. This vector is then used at 2 stages to find
+                                the best potential matches. At the retrieval stage, this vector is compared to other vectors within the feature store using FAISS to gather a list of k closest
+                                vectors. FAISS does this comparison between vectors by reducing the dimensionality of the vectors and performing the dot product rule. This is why it was
+                                reported to be 8.5x faster than the current state of the art. This is then finely filtered at the ranking stage which uses a larger ranking model to find
+                                the best possible candidates for a given query.</p>
+      <p className="intro_desc">And that in a nutshell is how Facebook Marketplace's Search Ranking System works</p>
+      <h1 className="fb_h1">Tools</h1>
+      <div className="tools_container">
+        <img src={Python} alt="python logo" />
+        <img src={Pandas} alt="pandas logo" />
+        <img src={NumPy} alt="numpy logo" />
+        <img src={PyTorch} alt="pytorch logo" />
+        <img src={GitHub} alt="github logo" />
+        <img src={Docker} alt="docker logo" />
+        <img src={Kubernetes} alt="kubernetes logo" />
+        <img src={AWS} alt="aws logo" />
+        <img src={FAISS} alt="faiss logo" />
+        <img src={FastAPI} alt="fast api logo" />
       </div>
-      <div id="fb_model_container">
-        <div className="fbmp_copy">
-          <div className="fbmp_header">
-            <div className="fbmp_title">Facebook</div>
-            <div className="fbmp_logo">
-              <img src={FBMPlogo} alt="facebook marketplace logo" />
-            </div>
-            <div className="fbmp_title">MarketPlace</div>
+      <p className="intro_desc"></p>
+      <h1 className="fb_h1">Multimodal Model</h1>
+    </div>
+    <div id="fb_model_container">
+      <div className="fbmp_copy">
+        <div className="fbmp_header">
+          <div className="fbmp_title">Facebook</div>
+          <div className="fbmp_logo">
+            <img src={FBMPlogo} alt="facebook marketplace logo" />
           </div>
-          <FBMPSearchBar location={'fb_searchbar_model'} />
-          <div className="products_tile">
-            Products go here
-          </div>
+          <div className="fbmp_title">MarketPlace</div>
         </div>
-      </div>
+        <FBMPSearchBar location={'fb_searchbar_model'} />
+        <div className="products_tile">
+          Products go here
+        </div>
+      </div> 
+    </div>
     </>
   );
 };

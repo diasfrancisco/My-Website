@@ -55,7 +55,6 @@ em {
 
 /* Introduction */
 #intro_container {
-    height: 100vh;
     padding: 0 10%;
 }
 
@@ -64,6 +63,7 @@ em {
     color: white;
     text-decoration: underline 3px;
     text-underline-offset: 8px;
+    padding: 50px 0;
 }
 
 .intro_desc {
@@ -72,14 +72,52 @@ em {
     padding-top: 20px;
 }
 
+.intro_desc > a {
+    text-decoration: underline;
+}
+
+.intro_desc > a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+#uml_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.uml {
+    width: 70%;
+    border-radius: 50px;
+}
+
+.uml_caption {
+    padding-top: 25px;
+    color: white;
+    font-size: var(--20);
+}
+
+.tools_container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+}
+
+.tools_container > img {
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
 /* Model */
 #fb_model_container {
     height: 100vh;
     padding: 2vh 10% 20vh 10%;
-}
-
-#fb_model_h1 {
-    padding: 0 10%;
 }
 
 .fbmp_copy {
