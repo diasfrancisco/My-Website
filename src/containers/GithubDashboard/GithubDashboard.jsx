@@ -1,12 +1,10 @@
 import axios from "axios";
-import React from "react";
-import { useState, useEffect } from "react";
-import { Repositories, RepositryMetrics } from "../../components";
+import { React, useState, useEffect } from "react";
+import { Repositories } from "../../components";
 import "./GithubDashboard.css";
 
 const GithubDashboard = () => {
   const [repos, SetRepos] = useState([]);
-  const [repo_data, RepoData] = useState([]);
 
   useEffect(() => {
     async function getRepos() {
@@ -15,7 +13,6 @@ const GithubDashboard = () => {
           "https://api.github.com/users/diasfrancisco/repos"
         );
         SetRepos(result);
-        RepoData(result.data);
       } catch (err) {
         console.log(err);
       }

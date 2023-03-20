@@ -8,8 +8,8 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
-import './Footer.css'
 import { Link } from 'react-router-dom'
+import './Footer.css'
 
 const Footer = () => {
   return (
