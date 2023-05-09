@@ -14,6 +14,15 @@ const RepositoryMetrics = (props) => {
 
   console.log(singleRepo)
 
+  function displayPageLink() {
+    switch (singleRepo.name) {
+      case "Facebook-Marketplaces-Ranking-System":
+        return <Link to="fbmp"><FontAwesomeIcon className='proj_icon' icon={faDiagramProject} /></Link>;
+      case "YouTube-Data-Streaming":
+        return <Link to="yt_analytics"><FontAwesomeIcon className='proj_icon' icon={faDiagramProject} /></Link>;
+    }
+  }
+
   function displayFBMP() {
     if (singleRepo.name === "Facebook-Marketplaces-Ranking-System") {
       return <Link to="fbmp"><FontAwesomeIcon className='proj_icon' icon={faDiagramProject} /></Link>;
@@ -47,7 +56,7 @@ const RepositoryMetrics = (props) => {
     <>
     <div>
       <a href={singleRepo.html_url} target="_blank" rel="noreferrer"><FontAwesomeIcon className='proj_icon' icon={faGithub} /></a>
-      {displayFBMP()}
+      {displayPageLink()}
     </div>
     <div className='bar_container'>
       <div id='weekly'>Weekly Commits</div>

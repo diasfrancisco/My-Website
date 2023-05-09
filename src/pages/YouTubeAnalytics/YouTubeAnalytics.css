@@ -1,0 +1,12 @@
+.yt_page_container {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    padding: 8% 10% 10% 10%;
+    display: flex;
+}
+
+.yt_dashboard_container {
+    border: 1px solid white;
+    width: 100vw;
+}

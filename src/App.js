@@ -13,7 +13,8 @@ import {
   Contact,
   PageNotFound,
   UnderMaintenance,
-  FBMarketPlace
+  FBMarketPlace,
+  YouTubeAnalytics
 } from './pages'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="computing">
           <Route index element={<Computing />} />
           <Route path="fbmp" element={<FBMarketPlace />} />
+          <Route path="yt_analytics" element={<YouTubeAnalytics />} />
         </Route>
         <Route path="about" element={<UnderMaintenance />} />
         <Route path="contact" element={<UnderMaintenance />} />
