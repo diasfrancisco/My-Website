@@ -12,7 +12,7 @@ const YouTubeAnalytics = () => {
           <div className="analytics">
             <button>Sentiment Analysis</button>
             <button>Thumbnail Analysis</button>
-            <button>Duration Analysis</button>
+            <button>Retention Analysis</button>
           </div>
         </div>
         <div className="main_container">
