@@ -32,6 +32,24 @@
     color: black;
 }
 
+.yt_searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: none;
+    width: 25%;
+    height: 40px;
+    padding: 0 1vw;
+    margin: 1vh 0;
+}
+
+.yt_searchbar_search_icon {
+    position: absolute;
+    font-size: 20px;
+    right: 45px;
+    color: black;
+}
+
 input {
     height: 100%;
     width: 100%;
